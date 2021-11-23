@@ -17,7 +17,7 @@ $(document).ready(function () {
         var current = moment().hour();
 
         $(".time-block").each(function () {
-            var hour = parseInt($(this).attr("id").split("hour")[1]);
+            var hour = parseInt($(this).attr("id"));
             console.log(hour, current)
 
             if (hour < current) {
