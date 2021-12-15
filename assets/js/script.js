@@ -10,7 +10,7 @@ $(document).ready(function () {
         var description = $(this).siblings(".description").val();
         var hour = $(this).parent().attr("id");
 
-        localStorage.setItem(description, hour);
+        localStorage.setItem(hour, description);
     })
 
     function tracker() {
